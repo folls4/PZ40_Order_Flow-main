@@ -4,10 +4,8 @@ const startButton = document.querySelector("#start-button");
 const resetButton = document.querySelector("#reset-button");  
 const steps = document.querySelector("#steps"); 
 const status = document.querySelector("#status"); 
-
 let timerId = null;   
 let isRunning = false;  
-
 function runStep(text, next) {  
   timerId = setTimeout(() => {  
     const li = document.createElement("li");  
@@ -19,7 +17,6 @@ function runStep(text, next) {
     } 
   }, 700);  
 } 
-
 startButton.addEventListener("click", () => { 
   if (isRunning) return;  
 
@@ -39,7 +36,6 @@ startButton.addEventListener("click", () => {
     }); 
   }); 
 }); 
-
 resetButton.addEventListener("click", () => { 
   clearTimeout(timerId);  
   timerId = null; 
