@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Order Flow — ПЗ 40</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="./js/script.js" defer></script>
+  </head>
+  <body>
+    <main class="page">
+      <header class="hero">
+      </header>
+      <div class="layout">
+        <section class="card card--wide">
+          <h2>Этапы выполнения заказа</h2>
+          <p class="muted">
+            Каждый следующий этап должен начинаться только после предыдущего.
+          </p>
+          <div class="controls">
+            <button class="btn btn--primary" id="start-button">
+              Запустить заказ
+            </button>
+            <button class="btn" id="reset-button">Очистить</button>
+          </div>
+          <ol class="steps" id="steps" aria-live="polite"></ol>
+          <p class="status" id="status" role="status">
+            Ожидание нового заказа.
+          </p>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>
